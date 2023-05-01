@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over project</title>
+    <style>
+      body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      background-color: black;
+      margin-top: 20%;
+    }
+    #box {
+    width: 200px;
+    background-color: grey;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 25px;
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+      <p>Safe Area</p>
+    </div>
+    <script>
+      const safe = document.getElementById("box")
+      safe.addEventListener("mouseout", () => {
+        alert("Your mouse are in safe area")
+      })
+    </script>
+</body>
+</html>
